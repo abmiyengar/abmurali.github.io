@@ -51,8 +51,8 @@ var path = d3.geoPath()
 
 var q = d3.queue()
 	.defer(d3.json, "data/us-10m.json")
-    .defer(d3.json, "http://api.census.gov/data/2015/acs1?get=NAME,B01003_001E&for=state:*&key=7adf8bfea67e27e5edcaa228acef5db5cb905303")
-    .defer(d3.json, "http://api.census.gov/data/2015/acs1?get=NAME,B01003_001E&for=county:*&key=7adf8bfea67e27e5edcaa228acef5db5cb905303")
+    .defer(d3.json, "https://api.census.gov/data/2015/acs1?get=NAME,B01003_001E&for=state:*&key=7adf8bfea67e27e5edcaa228acef5db5cb905303")
+    .defer(d3.json, "https://api.census.gov/data/2015/acs1?get=NAME,B01003_001E&for=county:*&key=7adf8bfea67e27e5edcaa228acef5db5cb905303")
     .awaitAll(function(error, results) {
 		if (error) throw error;
 		//print the response of first request - states | second - counties

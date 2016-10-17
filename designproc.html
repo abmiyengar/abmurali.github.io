@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Abhishek Iyengar | Design Process</title>
+
+    <link rel="stylesheet" href="css/table.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Animation Libraries -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magic.min.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900%7COpen+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <!-- Fonts Icons -->
+    <link rel="stylesheet" href="css/custom-icons.css">
+    <link rel="stylesheet" href="css/et-line-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <!-- Animated Headlines -->
+    <link rel="stylesheet" href="css/animated-hedlines.css">
+    <!-- Main Styles -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/styles2.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Animsition -->
+    <link href="css/animsition.min.css" rel="stylesheet">
+    <link href="css/theme/theme.css" rel="stylesheet" data-color="" id="theme">
+
+</head>
+
+    <body class="animsition">
+            
+                    <header class="project-page">
+            <div id = "project-header">
+              <a href="index.html">  <img src="img/home.png" height=40px width=40px class="img-circle" id="home-icon" href="index.html"></a> 
+            </div>
+        </header>
+
+        
+  
+        
+<section class="main-section paddind" id="Main"><!--main-section-start-->
+	<div class="container" >
+	<div align="center"> <h2 class="section-title-heading">DESIGN PROCESS</h2> </div><br>	
+  <p style="font-size:150%">User Comes First</P> <br>
+ <p>The success of my design is directly proportional to user satisfaction. If my design helps the user successfully and easily accomplish said task then and only then I have accomplished what I set out to do. At every stage of the design process I try to build mental models of how the user would percieve and react at this point. </p>
+<br></div>
+ <img alt="DesignProcess" src="img/design process2.png" title="Design Process" class=" img-responsive img-rounded"  /> 
+
+ 
+ <br>
+ <br>
+
+ <div class="container">
+<p style="font-size:150%">Define</p> 
+ <p>First I articulate the problem in detail and understand various needs of key stakeholders.To the best of my ability I build mental models of users and proceed to research user goals and requirements </p>
+
+<p style="font-size:150%">Research</p>
+<p>I gather information by conduting interviews, observations, participatory research, industry research and peer reviwed publications analysis. I firmly beleive in the philosophy “Data is King” and effective data gathering is crucial in my process.</p>
+
+<p style="font-size:150%">Ideate</p>
+<p>I prefer to brainstorm as a team using different design methods. I like affinity maps and empahty maps the most but also depending the problem use concept maps as well.</p>
+
+<p style="font-size:150%">Design </p>
+<p>Move to the design phase by building an MVP of the intended product. I firmly beleive in an agile model where the first design only contains the core product functions which must be tested before building more detailed models</p>
+
+<p style="font-size:150%">Prototype</p>
+<p>I work best by sketching out the prototype on paper before moving to Balsamiq or Axure. I like Balsamiq due to its sketch skin but I prefer Axure for prototyping for the Web</p>
+
+<p style="font-size:150%">Test</p>
+<p>In my opinion all designs are subective and may not accurately reresent user needs unless tested periodcially and using a variety of core users. I prefer to use THINK ALOUD protocal for testing by I have also performed Wizard of Oz based on the product requirements</p>
+
+<p style="font-size:150%">Analyse</p>
+<p>Accurate visual representation of  testing results provides me with a detailed view on which aspects of the design are failing to meet user needs. Depending on the product I build inforgraphics and visualizations to better understand problems with my design. I like using simple charts that helps all involved easily understand and interpret the results.
+To be critical and objective about the design i ask myself the following questions:<br><br>
+&Oslash; What will the user be doing while using my design?<br>
+&Oslash; How will the user take notice of it?<br>
+&Oslash; What is their next course of action?<br>
+&Oslash; How often will they use this design?<br>
+&Oslash; What happens when the design fails?<br>
+
+
+<p style="font-size:150%">Be humble and iterate</p>
+<p>I try to best to let go of my personal opinion when working in teams. I beleive we must be humble about our ideas and strive to grow as much as possible.Experience has shown me that each new idea helps the design evolve and creates a helps bring in a new dimension of understanding.</p>
+
+ </div>
+<footer class="footer">
+    <div class="container">
+        <span class="copyright">Copyright © 2015 | Designed by Abhishek Murali.</span>
+    </div>
+</footer>
+
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        $('#test').scrollToFixed();
+        $('.res-nav_click').click(function(){
+            $('.main-nav').slideToggle();
+            return false    
+            
+        });
+        
+    });
+</script>
+
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+    document.getElementById('').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+
+
+<script type="text/javascript">
+	$(window).load(function(){
+		
+		$('.main-nav li a').bind('click',function(event){
+			var $anchor = $(this);
+			
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top - 102
+			}, 1500,'easeInOutExpo');
+			/*
+			if you don't want to use the easing effects:
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1000);
+			*/
+			event.preventDefault();
+		});
+	})
+</script>
+
+<script type="text/javascript">
+
+$(window).load(function(){
+  
+  
+  var $container = $('.portfolioContainer'),
+      $body = $('body'),
+      colW = 375,
+      columns = null;
+
+  
+  $container.isotope({
+    // disable window resizing
+    resizable: true,
+    masonry: {
+      columnWidth: colW
+    }
+  });
+  
+  $(window).smartresize(function(){
+    // check if columns has changed
+    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+    if ( currentColumns !== columns ) {
+      // set new column count
+      columns = currentColumns;
+      // apply width to container manually, then trigger relayout
+      $container.width( columns * colW )
+        .isotope('reLayout');
+    }
+    
+  }).smartresize(); // trigger resize to set container width
+  $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+			
+            filter: selector,
+         });
+         return false;
+    });
+  
+});
+
+</script>
+<script type="text/javascript" src="js/app.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    <script src="js/jquery.animsition.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/animateSlider.js"></script>
+    <script src="js/animated-headlines.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script src="js/jquery.particleground.min.js"></script>
+    <script src="js/fss.min.js"></script>
+    <script src="js/fssinit.solid.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/contactForm.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+    <script src="js/scripts.js"></script>
+    
+</body>
+</html>

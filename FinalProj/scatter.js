@@ -23,6 +23,7 @@ d3.csv("data.csv", function(data) {
     d.Sales = +d.Sales;
     d.Size = +d.Size;
     d.SubCategory = +d.SubCategory;
+    d.Region = +d.Region;
 
   });
 
@@ -92,7 +93,7 @@ d3.csv("data.csv", function(data) {
     .append("text")
       .classed("label", true)
       .attr("transform", "rotate(-90)")
-      .attr("y", -margin.left+ 150)
+      .attr("y", -margin.left+ 50)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
       .text(yCat);

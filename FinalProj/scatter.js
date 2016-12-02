@@ -27,10 +27,10 @@ d3.csv("data.csv", function(data) {
   });
 
   var xMax = d3.max(data, function(d) { return d[xCat]; }) * 1.05,
-      xMin = d3.min(data, function(d) { return d[xCat]; }) * 0,
+      xMin = d3.min(data, function(d) { return d[xCat]; }) * 1.5,
 
       yMax = d3.max(data, function(d) { return d[yCat]; }) * 1.05,
-      yMin = d3.min(data, function(d) { return d[yCat]; }) * 0;
+      yMin = d3.min(data, function(d) { return d[yCat]; }) * -50;
 
 
   x.domain([xMin, xMax]);

@@ -1,0 +1,69 @@
+Sales,Size,Profit,SubCategory,Region,Category
+24157,1,-1997.9,Bookcases,Central,Furniture
+85231,1,6592.72,Chairs,Central,Furniture
+15254,1,-3906.22,Furnishings,Central,Furniture
+39155,1,-3559.65,Tables,Central,Furniture
+43819,1,-1167.63,Bookcases,East,Furniture
+96261,1,9357.77,Chairs,East,Furniture
+29071,1,5881.41,Furnishings,East,Furniture
+39140,1,-11025.38,Tables,East,Furniture
+10899,1,1339.49,Bookcases,South,Furniture
+45176,1,6612.09,Chairs,South,Furniture
+17307,1,3442.68,Furnishings,South,Furniture
+43916,1,-4623.06,Tables,South,Furniture
+36004,1,-1646.51,Bookcases,West,Furniture
+101781,1,4027.58,Chairs,West,Furniture
+30073,1,7641.27,Furnishings,West,Furniture
+84755,1,1482.61,Tables,West,Furniture
+23582,1,-2638.62,Appliances,Central,Office Supplies
+5765,1,1195.16,Art,Central,Office Supplies
+56923,1,-1043.64,Binders,Central,Office Supplies
+4637,1,1777.53,Envelopes,Central,Office Supplies
+778,1,236.62,Fasteners,Central,Office Supplies
+2451,1,1073.08,Labels,Central,Office Supplies
+17492,1,6971.9,Paper,Central,Office Supplies
+45930,1,1969.84,Storage,Central,Office Supplies
+9467,1,-661.89,Supplies,Central,Office Supplies
+34188,1,8391.41,Appliances,East,Office Supplies
+7486,1,1899.94,Art,East,Office Supplies
+53498,1,11267.93,Binders,East,Office Supplies
+4376,1,1812.41,Envelopes,East,Office Supplies
+820,1,263.99,Fasteners,East,Office Supplies
+2603,1,1129.28,Labels,East,Office Supplies
+20173,1,9015.37,Paper,East,Office Supplies
+71613,1,8389.37,Storage,East,Office Supplies
+10760,1,-1155.14,Supplies,East,Office Supplies
+19525,1,4123.94,Appliances,South,Office Supplies
+4656,1,1058.59,Art,South,Office Supplies
+37030,1,3900.66,Binders,South,Office Supplies
+3346,1,1465.48,Envelopes,South,Office Supplies
+503,1,173.72,Fasteners,South,Office Supplies
+2353,1,1040.77,Labels,South,Office Supplies
+14151,1,5947.06,Paper,South,Office Supplies
+35768,1,2274.3,Storage,South,Office Supplies
+8319,1,1.88,Supplies,South,Office Supplies
+30236,1,8261.27,Appliances,West,Office Supplies
+9212,1,2374.1,Art,West,Office Supplies
+55961,1,16096.8,Binders,West,Office Supplies
+4118,1,1908.76,Envelopes,West,Office Supplies
+923,1,275.19,Fasteners,West,Office Supplies
+5079,1,2303.12,Labels,West,Office Supplies
+26664,1,12119.24,Paper,West,Office Supplies
+70533,1,8645.32,Storage,West,Office Supplies
+18127,1,626.05,Supplies,West,Office Supplies
+33956,1,7251.63,Accessories,Central,Technology
+37260,1,15608.84,Copiers,Central,Technology
+26797,1,-1486.07,Machines,Central,Technology
+72403,1,12323.03,Phones,Central,Technology
+45033,1,11195.86,Accessories,East,Technology
+53219,1,17022.84,Copiers,East,Technology
+66106,1,6928.64,Machines,East,Technology
+100615,1,12314.69,Phones,East,Technology
+27277,1,7004.54,Accessories,South,Technology
+9300,1,3658.91,Copiers,South,Technology
+53891,1,-1438.89,Machines,South,Technology
+58304,1,10767.28,Phones,South,Technology
+61114,1,16484.6,Accessories,West,Technology
+49749,1,19327.24,Copiers,West,Technology
+42444,1,-618.93,Machines,West,Technology
+98684,1,9110.74,Phones,West,Technology

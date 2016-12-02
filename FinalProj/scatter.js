@@ -10,6 +10,7 @@ var x = d3.scale.linear()
 var y = d3.scale.linear()
     .range([height, 0]).nice();
 
+
 var xCat = "Profit",
     yCat = "Sales",
     rCat = "Size",
@@ -23,8 +24,6 @@ d3.csv("data.csv", function(data) {
     d.Sales = +d.Sales;
     d.Size = +d.Size;
     d.SubCategory = +d.SubCategory;
-    d.Category = +d.Category;
-    d.Region = +d.Region;
 
   });
 

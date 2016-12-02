@@ -10,7 +10,6 @@ var x = d3.scale.linear()
 var y = d3.scale.linear()
     .range([height, 0]).nice();
 
-
 var xCat = "Profit",
     yCat = "Sales",
     rCat = "Size",
@@ -28,7 +27,7 @@ d3.csv("data.csv", function(data) {
   });
 
   var xMax = d3.max(data, function(d) { return d[xCat]; }) * 1.05,
-      xMin = d3.min(data, function(d) { return d[xCat]; }) * -6,
+      xMin = d3.min(data, function(d) { return d[xCat]; }) * 0,
 
       yMax = d3.max(data, function(d) { return d[yCat]; }) * 1.05,
       yMin = d3.min(data, function(d) { return d[yCat]; }) * 0;

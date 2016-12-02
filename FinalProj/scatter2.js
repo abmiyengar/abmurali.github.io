@@ -89,7 +89,7 @@ d3.csv("cereal2.csv", function(data) {
     .append("text")
       .classed("label", true)
       .attr("transform", "rotate(-90)")
-      .attr("y", -margin.left + 150)
+      .attr("y", -margin.left + 20)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
       .text(yCat);

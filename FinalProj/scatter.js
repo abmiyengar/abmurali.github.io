@@ -22,8 +22,7 @@ d3.csv("data.csv", function(data) {
     d.Profit = +d.Profit;
     d.Sales = +d.Sales;
     d.Size = +d.Size;
-    d.SubCategory = +d.SubCategory;
-    d.Region = +d.Region;
+
 
   });
 

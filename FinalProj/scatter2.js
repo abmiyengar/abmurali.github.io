@@ -118,11 +118,10 @@ d3.csv("cereal2.csv", function(data) {
       .data(data)
     .enter().append("circle")
       .classed("dot", true)
-      .attr("r", function (d) {console.log(rCat);
-        return 12 * Math.sqrt(d[rCat] / Math.PI); })
+      .attr("r", function (d) { return 12 * Math.sqrt(d[rCat] / Math.PI); })
       .attr("transform", transform)
       .style("fill", function(d) { return color(d[colorCat]); })
-      //.attr("fill","none")
+      //.attr("fill", "none")
       .on("mouseover", tip.show)
       .on("mouseout", tip.hide);
 

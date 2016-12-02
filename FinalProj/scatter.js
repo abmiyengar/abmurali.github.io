@@ -19,10 +19,7 @@ var xCat = "Profit",
 
 d3.csv("data.csv", function(data) {
   data.forEach(function(d) {
-    d.Profit = +d.Profit;
-    d.Sales = +d.Sales;
-    d.Size = +d.Size;
-    d.SubCategory = +d.SubCategory;
+
 
   });
 

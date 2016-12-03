@@ -122,7 +122,7 @@ d3.csv("cereal2.csv", function(data) {
       .attr("transform", transform)
       .style("stroke", function(d) { return color(d[colorCat]); })
       .attr("fill", "none")
-      .attr("stroke-width",3)
+      .attr("stroke-width",2)
       .on("mouseover", tip.show)
       .on("mouseout", tip.hide);
 

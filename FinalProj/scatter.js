@@ -83,7 +83,7 @@ d3.csv("data.csv", function(data) {
       .classed("label", true)
       .attr("x", width + 10)
       .attr("y", margin.bottom - 10)
-      .style("text-anchor", "end")
+      .style("text-anchor", "middle")
       .text(xCat);
 
   svg.append("g")
@@ -94,7 +94,7 @@ d3.csv("data.csv", function(data) {
       .attr("transform", "rotate(-90)")
       .attr("y", -margin.left+ 50)
       .attr("dy", ".71em")
-      .style("text-anchor", "end")
+      .style("text-anchor", "middle")
       .text(yCat);
 
   var objects = svg.append("svg")

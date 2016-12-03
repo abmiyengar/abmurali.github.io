@@ -120,7 +120,7 @@ d3.csv("cereal2.csv", function(data) {
       .classed("dot", true)
       .attr("r", function (d) { return 12 * Math.sqrt(d[rCat] / Math.PI); })
       .attr("transform", transform)
-      .style("fill", function(d) { return color(d[colorCat]); })
+      .style("stroke", function(d) { return color(d[colorCat]); })
       .attr("fill", "none")
       .attr("stroke-width",3)
       .on("mouseover", tip.show)

@@ -124,7 +124,7 @@ d3.csv("data.csv", function(data) {
       .attr("r", function (d) { return 12 * Math.sqrt(d[rCat] / Math.PI); })
       .attr("transform", transform)
       .style("stroke", function(d) { return color(d[colorCat]); })
-      .style("stroke-width", 2)
+      .attr("stroke-width",2)
       .attr("fill", "none")
       .on("mouseover", tip.show)
       .on("mouseout", tip.hide);

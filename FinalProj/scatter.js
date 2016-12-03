@@ -125,7 +125,7 @@ d3.csv("data.csv", function(data) {
       .attr("transform", transform)
       .style("stroke", function(d) { return color(d[colorCat]); })
       .attr("fill", "none")
-      .attr("stroke-width",5)
+      .attr("stroke-width",4)
       .on("mouseover", tip.show)
       .on("mouseout", tip.hide);
 

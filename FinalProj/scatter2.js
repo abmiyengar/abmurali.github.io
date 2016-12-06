@@ -16,7 +16,7 @@ var xCat = "Energy Usage",
     mCat = "Year of Year",
     colorCat = "Region";
 
-d3.csv("cereal2.csv", function(data) {
+d3.csv("data2.csv", function(data) {
   data.forEach(function(d) {
     d["Year of Year"] = +d["Year of Year"];
     d.Size = +d.Size;

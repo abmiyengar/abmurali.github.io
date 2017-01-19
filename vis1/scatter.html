@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactive Visualization Project 1- Abhishek Murali</title>
+	<script src="js/d3.min.js" charset="utf-8"></script>
+	<script src="js/papaparse.min.js" charset="utf-8"></script>
+	<script src="js/scatter.js" charset="utf-8"></script>
+	<script src="js/chartscatter.js" charset="utf-8"></script>
+  	<script src="js/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="css/style.css">
+<!--
+<script>
+function start(){
+    load1();
+    load2();
+}
+</script> -->
+</head>
+<body onload="loadscatter()"> 
+
+<div class="container">
+<ul class="nav nav-tabs">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="compare.html">Compare</a></li>
+  <li class="active"><a href="scatter.html">Scatter Chart</a></li>
+  <li><a href="document.pdf">Documentation</a></li>
+  <li><a href="video.html">Video</a></li>
+</ul>
+
+	<br><p> This page is used the represent a scatterplot of two or more variables amoing the 13 available variables. Please use the below controls in a sequential manner to view the energy production and consumption values . To start off, please select the first and second variables. </p> 
+
+	<svg id="main" width="500" height="500">
+		<text id='label' x='100' y='70'></text>
+	</svg>
+
+	
+	<select id="energywidget1" style="position: absolute; left: 150px; top: 150px">
+	<option id="Total Primary Energy Production">Total Primary Energy Production</option>
+	<option id="Total Primary Energy Consumption">Total Primary Energy Consumption</option>
+	<option id="Total Electricity Generation">Total Electricity Generation</option>
+	<option id="Total Electricity Consumption">Total Electricity Consumption</option>
+	<option id="Renewable electricity Production">Renewable Electricity Production</option>
+	<option id="Renewable electricity Consumption">Renewable Electricity Consumption</option>
+	<option id="Renewable biofuels Production">Renewable Biofuels Production</option>
+	<option id="Renewable biofuels Consumption">Renewable Biofuels Consumption</option>
+	<option id="Petroleum Production">Petroleum Production</option>
+	<option id="Petroleum Consumption">Petroleum Consumption</option>
+	<option id="Coal Production">Coal Production</option>
+	<option id="Coal Consumption">Coal Consumption</option>
+	<option id="CO2 Emissions">CO2 Emissions</option>
+	</select>
+
+	<select id="energywidget2" style="position: absolute; left: 550px; top: 150px">
+	<option id="Total Primary Energy Production">Total Primary Energy Production</option>
+	<option id="Total Primary Energy Consumption">Total Primary Energy Consumption</option>
+	<option id="Total Electricity Generation">Total Electricity Generation</option>
+	<option id="Total Electricity Consumption">Total Electricity Consumption</option>
+	<option id="Renewable electricity Production">Renewable Electricity Production</option>
+	<option id="Renewable electricity Consumption">Renewable Electricity Consumption</option>
+	<option id="Renewable biofuels Production">Renewable Biofuels Production</option>
+	<option id="Renewable biofuels Consumption">Renewable Biofuels Consumption</option>
+	<option id="Petroleum Production">Petroleum Production</option>
+	<option id="Petroleum Consumption">Petroleum Consumption</option>
+	<option id="Coal Production">Coal Production</option>
+	<option id="Coal Consumption">Coal Consumption</option>
+	<option id="CO2 emissions">CO2 Emissions</option>
+	</select>
+<!--
+	<select id="energywidget3" style="position: absolute; left: 950px; top:150px">
+	<option id="Total Primary Energy Production">Total Primary Energy Production</option>
+	<option id="Total Primary Energy Consumption">Total Primary Energy Consumption</option>
+	<option id="Total Electricity Generation">Total Electricity Generation</option>
+	<option id="Total Electricity Consumption">Total Electricity Consumption</option>
+	<option id="Renewable electricity Production">Renewable Electricity Production</option>
+	<option id="Renewable electricity Consumption">Renewable Electricity Consumption</option>
+	<option id="Renewable biofuels Production">Renewable Biofuels Production</option>
+	<option id="Renewable biofuels Consumption">Renewable Biofuels Consumption</option>
+	<option id="Petroleum Production">Petroleum Production</option>
+	<option id="Petroleum Consumption">Petroleum Consumption</option>
+	<option id="Coal Production">Coal Production</option>
+	<option id="Coal Consumption">Coal Consumption</option>
+	<option id="CO2 emissions">CO2 Emissions</option>
+	</select>
+-->
+		
+
+</div>
+
+</body>
+
+
+</html>

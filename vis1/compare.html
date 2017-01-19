@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactive Visualization Project 1- Abhishek Murali</title>
+	<script src="js/d3.min.js" charset="utf-8"></script>
+	<script src="js/papaparse.min.js" charset="utf-8"></script>
+	<script src="js/charts-com.js" charset="utf-8"></script>
+	<script src="js/charts-com2.js" charset="utf-8"></script>
+	<script src="js/load-com.js" charset="utf-8"></script>
+	<script src="js/load-com2.js" charset="utf-8"></script>
+  	<script src="js/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/d3.tip.v0.6.3.js"></script>
+  	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="css/style.css">
+<script>
+function start(){
+    load1();
+    load2();
+}
+</script>
+</head>
+<body onload="start()"> 
+
+<div class="container">
+<ul class="nav nav-tabs">
+  <li><a href="index.html">Home</a></li>
+  <li class="active"><a href="compare.html">Compare</a></li>
+  <li><a href="scatter.html">Scatter Chart</a></li>
+  <li><a href="document.pdf">Documentation</a></li>
+  <li><a href="video.html">Video</a></li>
+</ul><br>
+
+<p> This page provides users with the ability to compare two different regions over the 13 available data variables. You may choose to compare them either as a line or a bar chart and they are plotted on two seperate chart areas. To start off, please select the chart tyoe for the first chart. </p> 
+
+<div class= "col-md-6">
+	<svg id="main" width="500" height="500" style="position: absolute; left: 10px; top: 120px">
+		<text id='label' x='100' y='70'></text>
+	</svg>
+
+	<select id="selectionWidget" style="position: absolute; left: 100px; top: 60px"><option id="">Select Region</option></select>
+
+	<select id="energywidget" style="position: absolute; left: 100px; top: 100px">
+	<option id="">Select Energy Variable</option>
+	<option id="Total Primary Energy Production">Total Primary Energy Production</option>
+	<option id="Total Primary Energy Consumption">Total Primary Energy Consumption</option>
+	<option id="Total Electricity Generation">Total Electricity Generation</option>
+	<option id="Total Electricity Consumption">Total Electricity Consumption</option>
+	<option id="Renewable Electricity Production">Renewable Electricity Production</option>
+	<option id="Renewable Electricity Consumption">Renewable Electricity Consumption</option>
+	<option id="Renewable Biofuels Production">Renewable Biofuels Production</option>
+	<option id="Renewable Biofuels Consumption">Renewable Biofuels Consumption</option>
+	<option id="Petroleum Production">Petroleum Production</option>
+	<option id="Petroleum Consumption">Petroleum Consumption</option>
+	<option id="Coal Production">Coal Production</option>
+	<option id="Coal Consumption">Coal Consumption</option>
+	<option id="CO2 Emissions">CO2 Emissions</option>
+	</select>
+
+	<select id="radio" style="position: absolute; left: 100px; top: 20px">
+	<option id="">Select Chart 1 Type</option>
+	<option id="Bar">Bar</option>
+	<option id="Line">Line</option>
+	</select>
+
+</div>
+
+<div class= "col-md-6">
+
+	<svg id="main2" width="500" height="500" style="position: absolute; left: 10px; top: 120px">
+		<text id='label2' x='100' y='70'></text>
+	</svg>
+
+	<select id="selectionWidget2" style="position: absolute; left: 100px; top: 60px"><option id="">Select Region</option></select>
+
+	<select id="energywidget2" style="position: absolute; left: 100px; top: 100px">
+	<option id="">Select Energy Variable</option>
+	<option id="Total Primary Energy Production">Total Primary Energy Production</option>
+	<option id="Total Primary Energy Consumption">Total Primary Energy Consumption</option>
+	<option id="Total Electricity Generation">Total Electricity Generation</option>
+	<option id="Total Electricity Consumption">Total Electricity Consumption</option>
+	<option id="Renewable Electricity Production">Renewable Electricity Production</option>
+	<option id="Renewable Electricity Consumption">Renewable Electricity Consumption</option>
+	<option id="Renewable Biofuels Production">Renewable Biofuels Production</option>
+	<option id="Renewable Biofuels Consumption">Renewable Biofuels Consumption</option>
+	<option id="Petroleum Production">Petroleum Production</option>
+	<option id="Petroleum Consumption">Petroleum Consumption</option>
+	<option id="Coal Production">Coal Production</option>
+	<option id="Coal Consumption">Coal Consumption</option>
+	<option id="CO2 Emissions">CO2 Emissions</option>
+	</select>
+
+	<select id="radio2" style="position: absolute; left: 100px; top: 20px">
+	<option id="">Select Chart 2 Type</option>
+	<option id="Line">Bar</option>
+	<option id="Bar">Line</option>
+	</select>
+
+
+
+	</div>	
+	<p style="position: absolute; left: 150px; top: 690px"> *Please note that if no graph is plotted in the chart area  then values for that particular variable is unavailable forthe selected country/region. Please try selecting a different region<br> or variable to proceed with your exploration.  </p>
+
+</div>	
+
+</body>
+
+
+</html>

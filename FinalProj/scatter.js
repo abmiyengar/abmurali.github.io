@@ -136,7 +136,7 @@ d3.csv("data.csv", function(data) {
       .attr("transform", function(d, i) { return "translate(0," + i * 70 + ")"; });
 
   legend.append("circle")
-      .attr("r", 10)
+      .attr("r", 2)
       .attr("stroke-width",2)
       .attr("cx", width)
       .attr("fill", color);

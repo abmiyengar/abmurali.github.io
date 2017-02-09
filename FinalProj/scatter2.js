@@ -1,6 +1,6 @@
 var margin = { top: 20, right: 300, bottom: 50, left: 100 },
-    outerWidth = 800,
-    outerHeight = 600,
+    outerWidth = 1024,
+    outerHeight = 768,
     width = outerWidth - margin.left - margin.right,
     height = outerHeight - margin.top - margin.bottom;
 
@@ -135,12 +135,12 @@ d3.csv("data2.csv", function(data) {
   legend.append("circle")
       .attr("r", 6)
       .attr("stroke-width",2)
-      .attr("cx", width + 20)
+      .attr("cx", width)
       .attr("fill", color);
 
   legend.append("text")
       .attr("x", width + 50)
-      .attr("font-size","5px")
+      .attr("font-size","16px")
       .text(function(d) { return d; });
   
 

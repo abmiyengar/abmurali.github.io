@@ -1,6 +1,6 @@
 var margin = { top: 20, right: 300, bottom: 50, left: 150 },
-    outerWidth = 600,
-    outerHeight = 400,
+    outerWidth = 800,
+    outerHeight = 600,
     width = outerWidth - margin.left - margin.right,
     height = outerHeight - margin.top - margin.bottom;
 
@@ -143,7 +143,7 @@ d3.csv("data.csv", function(data) {
 
   legend.append("text")
       .attr("x", width + 50)
-      .attr("font-size","25px")
+      .attr("font-size","6px")
       .text(function(d) { return d; });
     
 

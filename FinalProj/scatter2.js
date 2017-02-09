@@ -139,7 +139,7 @@ d3.csv("data2.csv", function(data) {
       .attr("fill", color);
 
   legend.append("text")
-      .attr("x", width + 50)
+      .attr("x", width)
       .attr("font-size","16px")
       .text(function(d) { return d; });
   

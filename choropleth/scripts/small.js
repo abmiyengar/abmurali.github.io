@@ -12,7 +12,7 @@ function showMapsm(variable,chart)
         //get the response asynchronously
         var q = d3.queue()
                 .defer(d3.json, "data/us-10m.json")
-            .defer(d3.json, "http://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+'state'+":*&key="+key)
+            .defer(d3.json, "https://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+'state'+":*&key="+key)
                 .awaitAll(function(error, results) {
                         if (error) throw error;
 

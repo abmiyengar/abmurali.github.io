@@ -35,9 +35,9 @@ function drawScatterPlot(variable1, variable2, variable3)
 	var reqVar3 = getMeParam(variable3);		
 	
 	var q = d3.queue()
-	    .defer(d3.json, "http://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar1+"&for="+division+":*&key="+key)
-		.defer(d3.json, "http://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar2+"&for="+division+":*&key="+key)
-		.defer(d3.json, "http://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar3+"&for="+division+":*&key="+key)
+	    .defer(d3.json, "https://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar1+"&for="+division+":*&key="+key)
+		.defer(d3.json, "https://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar2+"&for="+division+":*&key="+key)
+		.defer(d3.json, "https://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar3+"&for="+division+":*&key="+key)
 		.awaitAll(function(error, results) {
 		
 		var colorSp  = ["#a6cee3",

@@ -515,7 +515,7 @@ function drawDetailCharts(chosenDivisonId)
 		var total = 0;
 		var q = d3.queue();
 		var reqVar = getMeParam("B01003001");
-		q = q.defer(d3.json, "http://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
+		q = q.defer(d3.json, "https://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
 		var data = [];
 		console.log("drawing chart");
 		document.getElementById("totalValue").style.display = "block";
@@ -570,7 +570,7 @@ function drawDetailCharts(chosenDivisonId)
 		for(m = 0; m < Object.keys(sexByAge).length; m++)
 		{		
 			var reqVar = getMeParam(varIDs[m]);
-			q = q.defer(d3.json, "http://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
+			q = q.defer(d3.json, "https://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
 		}
 			
 		q.awaitAll(function(error, results) {
@@ -631,7 +631,7 @@ function drawDetailCharts(chosenDivisonId)
 		for(m = 0; m < Object.keys(race).length; m++)
 		{		
 			var reqVar = getMeParam(varIDs[m]);
-			q = q.defer(d3.json, "http://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
+			q = q.defer(d3.json, "https://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
 		}
 			
 		q.awaitAll(function(error, results) {
@@ -685,7 +685,7 @@ function drawDetailCharts(chosenDivisonId)
 		for(m = 0; m < Object.keys(educationalAttainment).length; m++)
 		{		
 			var reqVar = getMeParam(varIDs[m]);
-			q = q.defer(d3.json, "http://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
+			q = q.defer(d3.json, "https://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
 		}
 			
 		q.awaitAll(function(error, results) {
@@ -738,7 +738,7 @@ function drawDetailCharts(chosenDivisonId)
 		for(m = 0; m < Object.keys(livingArrangements).length; m++)
 		{		
 			var reqVar = getMeParam(varIDs[m]);
-			q = q.defer(d3.json, "http://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
+			q = q.defer(d3.json, "https://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
 		}
 			
 		q.awaitAll(function(error, results) {
@@ -797,7 +797,7 @@ function drawDetailCharts(chosenDivisonId)
 		for(m = 0; m < Object.keys(meansOfTransportation).length; m++)
 		{		
 			var reqVar = getMeParam(varIDs[m]);
-			q = q.defer(d3.json, "http://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
+			q = q.defer(d3.json, "https://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
 		}
 			
 		q.awaitAll(function(error, results) {
@@ -865,7 +865,7 @@ function drawDetailCharts(chosenDivisonId)
 		for(m = 0; m < Object.keys(placeOfBirth).length; m++)
 		{		
 			var reqVar = getMeParam(varIDs[m]);
-			q = q.defer(d3.json, "http://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
+			q = q.defer(d3.json, "https://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
 		}
 			
 		q.awaitAll(function(error, results) {
@@ -945,7 +945,7 @@ function drawDetailCharts(chosenDivisonId)
 		for(m = 0; m < Object.keys(incomeToPovertyRatio).length; m++)
 		{		
 			var reqVar = getMeParam(varIDs[m]);
-			q = q.defer(d3.json, "http://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
+			q = q.defer(d3.json, "https://api.census.gov/data/"+year+"/acs1?get=NAME,"+reqVar+"&for="+getDivision()+":*&key="+key);
 		}
 			
 		q.awaitAll(function(error, results) {

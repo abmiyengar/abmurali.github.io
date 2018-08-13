@@ -1,0 +1,116 @@
+
+
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ng="http://angularjs.org">
+<head>
+    <title>PowerDMS</title>
+
+    <link rel="stylesheet" href="/public/content/version_1533761807287/app.css" />
+
+    
+        <script>
+            var apiBaseUrl = "https://api.powerdms.com";
+            var websocketsUrl = "ws.powerdms.com";
+        </script>
+    
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        /* We don't want to pollute prod with test traffic, so we've created dev analytics properties */
+        if(window.location.hostname.indexOf('powerdms.com') !== -1){
+            ga('create', 'UA-9961517-2', 'auto'); // Prod - App only property
+            ga('create', 'UA-9961517-7', 'auto', { name: 'jointTracker' }); // Prod - App + Marketing Site property
+            
+            
+            // Marketing has requested we send signup events directly to the marketing property. This allows them to easily view them
+            //    without the high traffic of the regular app obscuring the data
+            ga('create', 'UA-9961517-6', 'auto', { name: 'marketingSite' }); // Prod - Marketing Site Only property
+            
+        } else {
+            ga('create', 'UA-9961517-8', 'auto'); // Dev - App only property
+            ga('create', 'UA-9961517-9', 'auto', {name: 'jointTracker'}); // Dev - App + Marketing Site property
+        }
+
+        /* Since we have multiple properties, this is a convenience function to do stuff to all of them at the same time */
+        function powGaAll(command, event, category, action, label, value){
+            ga(command, event, category, action, label, value);
+            ga('jointTracker' + '.' + command, event, category, action, label, value);
+            
+            // This is fine in development because GA ignores any requests that don't match a property
+            ga('marketingSite' + '.' + command, event, category, action, label, value);
+            
+        }
+
+        /* Since we're a single page app, we're sending pageviews in gateway-main by listening for route changes */
+    </script>
+    <!-- This needs to be "/" because if it's "/signup", angular routing will blow up if you go to "/signup?any=something"
+         The marketing site had a link that had query params like that -->
+    <base href="/">
+    
+    
+</head>
+<body class="default-font ng-app-main">
+    
+    
+    <div class="publicDocs_stickyFooterWrapper"
+        ng-include="baseController.publicDocsPageTemplateUrl"></div>
+
+
+
+    <div id="outdated-browser-modal" style="display: none;">
+        <div class="modal-backdrop fade in" style="z-index: 9001"></div>
+        <div tabindex="-1" class="modal fade in" style="z-index: 9002; display: block;" index="0">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header clearfix">
+                        <span class="pull-left">
+                            <span class="power-icon">&nbsp;</span><span> Outdated Browser Detected</span>
+                        </span>
+                    </div>
+                    <div class="modal-body old-ie-fallback" style="text-align: left; margin-top: 0;">
+                        <p>Valued PowerDMS Customer,</p>
+                        <p>We noticed you’re not running on a modern browser at this time. <b>PowerDMS is no longer functional on the browser you're running.</b> </p>
+                        <p>
+                            We want you and your team to have the best experience possible in our application.
+                            To proceed with using PowerDMS, you will need to update your web browser.
+                            <b>Please update to the latest version of one of these great web browsers</b> or contact your IT department for support.
+                        </p>
+                        <div style="text-align: center;">
+                            <a href="https://www.google.com/chrome/browser/desktop/" target="_blank" class="browser-icon-link" title="Google Chrome">
+                                <img src="/public/content/version_1533761807287/assets/images/chrome_icon.png" class="browser-icon" />
+                            </a>
+                            <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank" class="browser-icon-link" title="Mozilla Firefox">
+                                <img src="/public/content/version_1533761807287/assets/images/firefox_icon.png"
+                                class="browser-icon" style="position: relative; top: 3px;"/>
+                            </a>
+                            <a href="https://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank" class="browser-icon-link" title="Internet Explorer">
+                                <img src="/public/content/version_1533761807287/assets/images/ie_icon.png" class="browser-icon" />
+                            </a>
+                        </div>
+                        <p>
+                            We know that this change will enable you to use all that’s available to you in PowerDMS.
+                            Please don't hesitate to contact our Service Desk at support@powerdms.com with any questions you may have.
+                        </p>
+                        <p>Thank you,</p>
+                        <p>The PowerDMS Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is to include each individual file in dev mode, but the concat version in prod -->
+    
+                <script type="text/javascript">
+                    window.userLocale = 'en';
+                </script>
+            <script type="text/javascript" src="/public/content/version_1533761807287/jquery.js"></script><script type="text/javascript" src="/public/content/version_1533761807287/commons.js"></script><script type="text/javascript" src="/public/content/version_1533761807287/en.js"></script><script type="text/javascript" src="/public/content/version_1533761807287/app.js"></script>
+    
+    
+</body>
+</html>
